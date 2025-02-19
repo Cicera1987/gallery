@@ -1,7 +1,7 @@
 export default function Documentos() {
     return (
         <>
-            <section className="container mx-auto p-6 bg-gray-400 font-sans rounded-lg shadow-md">
+            <section className="container mx-auto p-6 font-sans">
                 <h1 className="text-3xl font-bold mb-6 text-center text-gray-800">
                     Redux RTK Query e suas Aplicações
                 </h1>

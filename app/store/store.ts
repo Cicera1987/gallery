@@ -1,13 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
-import galleryReducer from "./features/gallerySlice";
-import cartReducer from "./features/CartSlice";
+import GalleryReducer from "./features/gallerySlice";
+import CartReducer from "./features/CartSlice";
+import TaskReducer from "./features/taskSlice";
 
 
 
 export const store = configureStore({
   reducer: {
-    gallery: galleryReducer,
-    cart: cartReducer,
+    gallery: GalleryReducer,
+    cart: CartReducer,
+    task: TaskReducer
 
 
   },

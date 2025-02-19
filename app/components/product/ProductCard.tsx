@@ -13,7 +13,7 @@ export default function ProductCard({ product }: Props) {
     };
 
     return (
-        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300"> 
+        <div className="bg-white rounded-lg"> 
             <div className="relative h-48 w-full mb-4 overflow-hidden rounded-t-lg"> 
                 <Image
                     src={product.image}

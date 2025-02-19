@@ -22,7 +22,7 @@ export default function Carrinho() {
 
     return (
     <div className="mt-8">
-            <div className="container mx-auto p-4 bg-gray-400 rounded-lg shadow-md">
+            <div className="container mx-auto p-4 bg-white rounded-lg shadow-md">
                 <FaShoppingCart className="text-2xl mr-2 text-gray-800" />
                 <h2 className="text-2xl font-bold mb-4 text-gray-800">
                     Carrinho de Compras
