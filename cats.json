@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Mittens",
+    "breed": "Siamês",
+    "age": 2,
+    "image": "https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2023/11/05/35067549-29190128798057.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Luna",
+    "breed": "Persa",
+    "age": 3,
+    "image": "https://static.ndmais.com.br/2024/08/gato-persa-ok-800x472.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Simba",
+    "breed": "Maine Coon",
+    "age": 4,
+    "image": "https://blog-static.petlove.com.br/wp-content/uploads/2018/05/Maine-Coon.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Oliver",
+    "breed": "Bengal",
+    "age": 1,
+    "image": "https://caes-e-cia.com.br/wp-content/uploads/2018/02/466bengallonghair-1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Bella",
+    "breed": "Sphynx",
+    "age": 5,
+    "image": "https://www.petz.com.br/blog/wp-content/uploads/2019/09/gato-sphynx.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Chester",
+    "breed": "Siamês",
+    "age": 2,
+    "image": "https://jpimg.com.br/uploads/2023/03/conheca-as-principais-caracteristicas-do-gato-siames.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Ziggy",
+    "breed": "Ragdoll",
+    "age": 4,
+    "image": "https://cobasi.vteximg.com.br/arquivos/ids/279835/ragdoll_.png?v=637063283784230000"
+  },
+  {
+    "id": 8,
+    "name": "Nina",
+    "breed": "Britânico de Pelo Curto",
+    "age": 3,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/PapillonSofa.jpg"
+  }
+]
