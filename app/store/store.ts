@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import galleryReducer from "./features/gallerySlice";
+import cartReducer from "./features/CartSlice";
 
 
 
 export const store = configureStore({
   reducer: {
     gallery: galleryReducer,
+    cart: cartReducer,
 
 
   },
