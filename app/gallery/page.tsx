@@ -3,12 +3,12 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import { RootState, AppDispatch } from "@/redux/store";
+import { RootState, AppDispatch } from "../store/store";
 import { fetchCats } from "../store/features/gallerySlice";
 import Image from "next/image";
 
 export default function Gallery() {
-    const dispatch = useDispatch < AppDispatch > ();
+    const dispatch = useDispatch <AppDispatch>();
     const { cats, loading } = useSelector((state: RootState) => state.gallery);
 
     useEffect(() => {
