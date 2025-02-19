@@ -26,7 +26,7 @@ export default function Gallery() {
                         key={cat.id}
                         className="bg-white rounded-lg shadow-lg overflow-hidden"
                     >
-                        <Image width={300} height={500} src={cat.image} alt={cat.name} className="w-full h-60 object-cover" />
+                        <Image width="300px" height="600px" src={cat.image} alt={cat.name} className="w-full h-60 object-cover" />
                         <div className="p-4">
                             <h2 className="text-xl text-gray-500 font-semibold">{cat.name}</h2>
                             <p className="text-gray-600">{cat.breed}</p>
