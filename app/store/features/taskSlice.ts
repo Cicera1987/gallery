@@ -1,8 +1,10 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
+import { v4 as uuidv4 } from "uuid";
 
-interface Task {
+type Task = {
     id: string;
-    text: string;
+    title: string;
+    description: string;
     status: "backlog" | "Em andamento" | "concluído";
 }
 
@@ -18,17 +20,20 @@ const taskSlice = createSlice({
     name: "tasks",
     initialState,
     reducers: {
-        addTask: (state, action: PayloadAction<string>) => {
+        addTask: (state, action: PayloadAction<Omit<Task, "id">>) => {
             state.tasks.push({
-                id: Date.now().toString(),
-                text: action.payload,
+                id: uuidv4(),
+                title: action.payload.title,
+                description: action.payload.description,
                 status: "backlog",
             });
         },
-        editTask: (state, action: PayloadAction<{ id: string; text: string }>) => {
+        editTask: (state, action: PayloadAction<Task>) => {
             const task = state.tasks.find((task) => task.id === action.payload.id);
             if (task) {
-                task.text = action.payload.text;
+                task.title = action.payload.title;
+                task.description = action.payload.description;
+                task.status = action.payload.status;
             }
         },
         removeTask: (state, action: PayloadAction<string>) => {

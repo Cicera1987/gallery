@@ -1,7 +1,7 @@
 "use client";
 
 import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "../../store/store";
+import { RootState } from "../store/store";
 import { removeItem, updateQuantity } from "../store/features/CartSlice";
 import CartItem from "../components/cart/CartItem";
 import CartTotal from "../components/cart/CartTotal";
