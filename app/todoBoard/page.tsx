@@ -58,9 +58,14 @@ const TodoBoard = () => {
 
     const renderColumn = (status: "backlog" | "Em andamento" | "concluído") => {
         const statusColors: Record<typeof status, string> = {
-            backlog: "text-gray-500 ⏳",
-            "Em andamento": "text-green-500 ⚡",
-            concluído: "text-blue-500 ✔️",
+            backlog: "text-gray-500 ",
+            "Em andamento": "text-green-500",
+            concluído: "text-blue-500 ",
+        };
+        const statusIcons: Record<typeof status, string> = {
+            backlog: "",
+            "Em andamento": "",
+            concluído: "✔️",
         };
 
         return (
@@ -104,8 +109,8 @@ const TodoBoard = () => {
                                                     </div>
                                                 ) : (
                                                     <div className="flex flex-col">
-                                                        <h3 className={`text-lg font-semibold mb-4 ${statusColors[status]}`}>{task.title}</h3>
-                                                        <p className="text-gray-500">{task.description}</p>
+                                                            <h3 className={`text-lg font-semibold mb-4 ${statusColors[status]}`}>{task.title}</h3>
+                                                            <p className=" flex justify-between space-x-2text-gray-500">{task.description} <span>{statusIcons[status]}</span></p>
                                                         <div className="flex justify-between space-x-2 mt-2">
                                                             <button
                                                                 onClick={() => handleEditTask(task.id)}
