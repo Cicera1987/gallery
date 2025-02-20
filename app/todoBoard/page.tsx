@@ -58,9 +58,9 @@ const TodoBoard = () => {
 
     const renderColumn = (status: "backlog" | "Em andamento" | "concluído") => {
         const statusColors: Record<typeof status, string> = {
-            backlog: "text-gray-500",
-            "Em andamento": "text-green-500",
-            concluído: "text-blue-500",
+            backlog: "text-gray-500 ⏳",
+            "Em andamento": "text-green-500 ⚡",
+            concluído: "text-blue-500 ✔️",
         };
 
         return (
