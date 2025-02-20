@@ -2,7 +2,7 @@
 
 import { useDispatch } from "react-redux";
 import { addItem } from "../../store/features/CartSlice";
-import { Props } from "@/app/types/Tipos";
+import { Props } from "@/app/types/Types";
 import Image from "next/image";
 
 export default function ProductCard({ product }: Props) {

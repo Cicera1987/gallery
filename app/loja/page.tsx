@@ -1,7 +1,7 @@
 'use client';
 
 import ProductCard from "../components/product/ProductCard";
-import { Product } from "../types/Tipos";
+import { Product } from "../types/Types";
 
 
 export default function Loja() {

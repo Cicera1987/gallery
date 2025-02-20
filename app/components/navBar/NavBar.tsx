@@ -10,6 +10,7 @@ export default function NavBar() {
                 <TextLink texto="Home" href="/" />
                 <TextLink texto="Galeria" href="/gallery" />
                 <TextLink texto="Loja" href="/loja" />
+                <TextLink texto="Pokemons" href="/pokemon" />
                 <TextLink texto="Documentos" href="/documents" />
             </nav>
         </>

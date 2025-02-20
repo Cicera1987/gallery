@@ -8,7 +8,7 @@ import { DragDropContext, Droppable, Draggable, DropResult } from "@hello-pangea
 import { addTask, removeTask, moveTask, editTask } from "../store/features/taskSlice";
 import { RootState, AppDispatch } from "../store/store";
 import { FaTrash, FaRegEdit } from "react-icons/fa";
-import { TaskForm, TaskFormEdit } from "../types/Tipos";
+import { TaskForm, TaskFormEdit } from "../types/Types";
 
 
 const TodoBoard = () => {

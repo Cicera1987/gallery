@@ -1,4 +1,4 @@
-import { Product } from '../../types/Tipos';
+import { Product } from '../../types/Types';
 import { FaTrash, FaPlus, FaMinus } from 'react-icons/fa';
 
 // estas interfaces foi uma gambiarra
