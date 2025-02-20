@@ -19,7 +19,6 @@ const TodoBoard = () => {
     const [editForm, setEditForm] = useState <TaskFormEdit> ({ title: "", description: "" });
 
     const handleAddTask = (data: TaskForm) => {
-        console.log('data: ', data);
         if (data.title.trim()) {
             dispatch(addTask({title: data.title, description: data.description, status: data.status}));
             reset();
