@@ -57,15 +57,16 @@ const TodoBoard = () => {
     };
 
     const renderColumn = (status: "backlog" | "Em andamento" | "concluído") => {
+        
         const statusColors: Record<typeof status, string> = {
             backlog: "text-gray-500 ",
             "Em andamento": "text-green-500",
             concluído: "text-blue-500 ",
         };
-        const statusIcons: Record<typeof status, string> = {
-            backlog: "",
-            "Em andamento": "",
-            concluído: "✔️",
+        const bgColors: Record<typeof status, string> = {
+            backlog: "bg-gray-500",
+            "Em andamento": "bg-green-500",
+            concluído: "bg-blue-500",
         };
 
         return (
@@ -109,8 +110,11 @@ const TodoBoard = () => {
                                                     </div>
                                                 ) : (
                                                     <div className="flex flex-col">
-                                                            <h3 className={`text-lg font-semibold mb-4 ${statusColors[status]}`}>{task.title}</h3>
-                                                            <p className=" flex justify-between space-x-2text-gray-500">{task.description} <span>{statusIcons[status]}</span></p>
+                                                            <h3 className="text-lg text-gray-600 font-semibold mb-4 flex items-center">
+                                                                <span className={`w-3 h-3 rounded-full mr-2 ${bgColors[status]}`}></span>
+                                                                {task.title}
+                                                            </h3>
+                                                            <p className=" flex justify-between space-x-2text-gray-500">{task.description}</p>
                                                         <div className="flex justify-between space-x-2 mt-2">
                                                             <button
                                                                 onClick={() => handleEditTask(task.id)}
